@@ -1,0 +1,19 @@
+# Garmin Build Files
+bin/
+mir/
+internal-mir/
+gen/
+*.prg
+*.debug
+*.str
+
+# Security - NEVER UPLOAD THESE
+developer_key
+developer_key.der
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
