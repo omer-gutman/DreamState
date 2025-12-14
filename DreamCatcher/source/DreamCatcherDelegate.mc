@@ -24,16 +24,17 @@ class DreamDelegate extends WatchUi.BehaviorDelegate {
         // 1. Create the Menu
         var menu = new WatchUi.Menu2({:title=>"I dreamt about..."});
 
-        // 2. Add your Keywords here!
-        // format: MenuItem( Label, SubLabel, ID, options )
+        // 2. Add your Standard Keywords
         menu.addItem(new WatchUi.MenuItem("Flying", "Soaring high", "flying", null));
         menu.addItem(new WatchUi.MenuItem("Falling", "Scary drop", "falling", null));
         menu.addItem(new WatchUi.MenuItem("Chasing", "Running away", "chasing", null));
         menu.addItem(new WatchUi.MenuItem("Water", "Ocean/River", "water", null));
         menu.addItem(new WatchUi.MenuItem("Family", "Parents/Kids", "family", null));
-        menu.addItem(new WatchUi.MenuItem("Work", "Office stress", "work", null));
+        
+        // 3. --- NEW BUTTON ---
+        // This button triggers the keyboard
+        menu.addItem(new WatchUi.MenuItem("Write Own...", "Type it out", "custom_input", null));
 
-        // 3. Push the Menu View
         WatchUi.pushView(menu, new DreamMenuDelegate(), WatchUi.SLIDE_UP);
     }
 }

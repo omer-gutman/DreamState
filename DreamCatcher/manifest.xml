@@ -13,10 +13,7 @@
                                        that belong to the same product category
             "Monkey C: Edit Products" - Lets you add or remove any product
         -->
-        <iq:products>
-            <iq:product id="fr965"/>
-            <iq:product id="venu2s"/>
-        </iq:products>
+        <iq:products/>
         <!--
             Use "Monkey C: Edit Permissions" from the Visual Studio Code command
             palette to update permissions.
@@ -24,6 +21,8 @@
         <iq:permissions>
             <iq:uses-permission id="Communications"/>
             <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="Communications"/>
+            <iq:uses-permission id="SensorHistory"/>
             <iq:uses-permission id="SensorHistory"/>
             <iq:uses-permission id="SensorHistory"/>
         </iq:permissions>
@@ -31,7 +30,11 @@
             Use "Monkey C: Edit Languages" from the Visual Studio Code command
             palette to edit your compatible language list.
         -->
-        <iq:languages/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+            <iq:language>eng</iq:language>
+            <iq:language>heb</iq:language>
+        </iq:languages>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
             command palette to edit the included barrels.
